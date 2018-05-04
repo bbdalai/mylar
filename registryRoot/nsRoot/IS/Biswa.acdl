@@ -1,8 +1,8 @@
 <asset_composite xmlns="http://namespaces.softwareag.com/acdl/1.0" targetNamespace="http://namespaces.softwareag.com/webMethods/IS" name="Biswa" runtimeVersion="10.3.0.0">
   <implementation.generic type="ispackage" />
-  <buildInfo name="build.version" value="10.3.80" />
-  <buildInfo name="BuildVersion" value="10.3.80" />
-  <buildInfo name="BuildTimestamp" value="2018-05-04T12:10:44" />
+  <buildInfo name="build.version" value="10.3.85" />
+  <buildInfo name="BuildVersion" value="10.3.85" />
+  <buildInfo name="BuildTimestamp" value="2018-05-04T14:55:40" />
   <buildInfo name="MinimumTargetRuntimeVersion" value="10.3.0.0" />
   <property name="activatePkgOnInstall" displayName="Activate Package On Install">
     <value>true</value>
@@ -33,6 +33,7 @@
   </property>
   <asset name="ISPackage.Biswa" displayName="Biswa">
     <implementation.generic type="ispackage" />
+    <dependsOn>IS:ISPackage.helloworld</dependsOn>
   </asset>
   <asset name="inbda.specification" displayName="inbda:specification">
     <implementation.generic type="isspecification" />
@@ -45,9 +46,6 @@
   </asset>
   <asset name="inbda.documentType" displayName="inbda:documentType">
     <implementation.generic type="isdocumenttype" />
-  </asset>
-  <asset name="inbda.flowservice1_1_1" displayName="inbda:flowservice1_1_1">
-    <implementation.generic type="isflowservice" />
   </asset>
   <asset name="inbda.flowservice" displayName="inbda:flowservice">
     <implementation.generic type="isflowservice" />
