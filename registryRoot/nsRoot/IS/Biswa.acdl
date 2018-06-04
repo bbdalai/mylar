@@ -1,114 +1,114 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<asset_composite name="Biswa" runtimeVersion="10.3.0.0" targetNamespace="http://namespaces.softwareag.com/webMethods/IS" xmlns="http://namespaces.softwareag.com/acdl/1.0" xmlns:EDA="http://namespaces.softwareag.com/webMethods/EDA" xmlns:MWS="http://namespaces.softwareag.com/webMethods/MWS" xmlns:IS="http://namespaces.softwareag.com/webMethods/IS" xmlns:APIPORTAL="http://namespaces.softwareag.com/webMethods/APIPORTAL" xmlns:AgileApps="http://namespaces.softwareag.com/webMethods/AgileApps" xmlns:BROKER="http://namespaces.softwareag.com/webMethods/BROKER" xmlns:implDetails="http://namespaces.softwareag.com/acdl/implDetails" xmlns:UniversalMessaging="http://namespaces.softwareag.com/webMethods/UniversalMessaging" xmlns:TN="http://namespaces.softwareag.com/webMethods/TN" xmlns:RULES="http://namespaces.softwareag.com/webMethods/RULES" xmlns:BPM="http://namespaces.softwareag.com/webMethods/BPM" xmlns:Optimize="http://namespaces.softwareag.com/webMethods/Optimize">
-    <implementation.generic type="ispackage"/>
-    <buildInfo name="BuildTimestamp" value="2018-05-31T15:07:26"/>
-    <buildInfo name="BuildVersion" value="10.3.181"/>
-    <buildInfo name="MinimumTargetRuntimeVersion" value="10.3.0.0"/>
-    <buildInfo name="build.version" value="10.3.181"/>
-    <asset name="ISPackage.Biswa" displayName="Biswa" isDeployable="true">
-        <implementation.generic type="ispackage"/>
-        <dependsOn>IS:ISPackage.helloworld</dependsOn>
-    </asset>
-    <asset name="inbda.specification" displayName="inbda:specification" isDeployable="true">
-        <implementation.generic type="isspecification"/>
-    </asset>
-    <asset name="inbda.demodoc1" displayName="inbda:demodoc1" isDeployable="true">
-        <implementation.generic type="isdocumenttype"/>
-    </asset>
-    <asset name="inbda.mapservice" displayName="inbda:mapservice" isDeployable="true">
-        <implementation.generic type="isflowservice"/>
-    </asset>
-    <asset name="inbda.flowservice1_1" displayName="inbda:flowservice1_1" isDeployable="true">
-        <implementation.generic type="isflowservice"/>
-    </asset>
-    <asset name="inbda.documentType" displayName="inbda:documentType" isDeployable="true">
-        <implementation.generic type="isdocumenttype"/>
-    </asset>
-    <asset name="inbda.flowservice1_1_1" displayName="inbda:flowservice1_1_1" isDeployable="true">
-        <implementation.generic type="isflowservice"/>
-    </asset>
-    <asset name="inbda.flowservice" displayName="inbda:flowservice" isDeployable="true">
-        <implementation.generic type="isflowservice"/>
-    </asset>
-    <asset name="inbda.flowservice1" displayName="inbda:flowservice1" isDeployable="true">
-        <implementation.generic type="isflowservice"/>
-    </asset>
-    <asset name="inbda.javaService" displayName="inbda:javaService" isDeployable="true">
-        <implementation.generic type="isjavaservice"/>
-        <dependsOn>IS:Biswa.code.classes.inbda.class</dependsOn>
-        <dependsOn>IS:Biswa.code.source.inbda.java</dependsOn>
-    </asset>
-    <asset name="inbda.jmstrigger" displayName="inbda:jmstrigger" isDeployable="true">
-        <implementation.generic type="isjmstrigger"/>
-    </asset>
-    <asset name="inbda.new_rest" displayName="inbda:new_rest" isDeployable="true">
-        <implementation.generic type="isrestresource"/>
-        <dependsOn>IS:inbda.flowservice</dependsOn>
-    </asset>
-    <asset name="Biswa.code" displayName="code" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <asset name="Biswa.code.classes" displayName="code/classes" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <asset name="Biswa.code.classes.inbda.class" displayName="code/classes/inbda.class" isDeployable="true">
-        <implementation.generic type="isfile"/>
-    </asset>
-    <asset name="Biswa.code.source" displayName="code/source" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <asset name="Biswa.code.source.inbda.java" displayName="code/source/inbda.java" isDeployable="true">
-        <implementation.generic type="isfile"/>
-    </asset>
-    <asset name="Biswa.code.jars" displayName="code/jars" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <asset name="Biswa.doc" displayName="doc" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <asset name="Biswa.pub" displayName="pub" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <asset name="Biswa.templates" displayName="templates" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <asset name="Biswa.web" displayName="web" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <asset name="Biswa.config" displayName="config" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <asset name="Biswa.resources" displayName="resources" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <asset name="Biswa.lib" displayName="lib" isDeployable="true">
-        <implementation.generic type="isfolder"/>
-    </asset>
-    <property name="activatePkgOnInstall" many="false" isSecure="false" displayName="activatePkgOnInstall">
-        <value>false</value>
-    </property>
-    <property name="archivePkgOnInstall" many="false" isSecure="false" displayName="archivePkgOnInstall">
-        <value>true</value>
-    </property>
-    <property name="compilePackage" many="false" isSecure="false" displayName="compilePackage">
-        <value>true</value>
-    </property>
-    <property name="fragPackage" many="false" isSecure="false" displayName="fragPackage">
-        <value>true</value>
-    </property>
-    <property name="clearACLs" many="false" isSecure="false" displayName="clearACLs">
-        <value>false</value>
-    </property>
-    <property name="disallowActivePackageInstall" many="false" isSecure="false" displayName="disallowActivePackageInstall">
-        <value>false</value>
-    </property>
-    <property name="packageExecutionCheck" many="false" isSecure="false" displayName="packageExecutionCheck">
-        <value>0</value>
-    </property>
-    <property name="suspendTriggersDuringDeploy" many="false" isSecure="false" displayName="suspendTriggersDuringDeploy">
-        <value>false</value>
-    </property>
-    <property name="syncDocTypesToBroker" many="false" isSecure="false" displayName="syncDocTypesToBroker">
-        <value>true</value>
-    </property>
+<asset_composite xmlns="http://namespaces.softwareag.com/acdl/1.0" targetNamespace="http://namespaces.softwareag.com/webMethods/IS" name="Biswa" runtimeVersion="10.3.0.0">
+  <implementation.generic type="ispackage" />
+  <buildInfo name="build.version" value="10.3.181" />
+  <buildInfo name="BuildVersion" value="10.3.181" />
+  <buildInfo name="BuildTimestamp" value="2018-05-31T15:07:26" />
+  <buildInfo name="MinimumTargetRuntimeVersion" value="10.3.0.0" />
+  <property name="activatePkgOnInstall" displayName="Activate Package On Install">
+    <value>true</value>
+  </property>
+  <property name="archivePkgOnInstall" displayName="Archive Package On Install">
+    <value>true</value>
+  </property>
+  <property name="compilePackage" displayName="Compile Package On Install">
+    <value>true</value>
+  </property>
+  <property name="fragPackage" displayName="Fragment Package On Install">
+    <value>true</value>
+  </property>
+  <property name="clearACLs" displayName="Delete ACLs for the assets from the target Integration Server">
+    <value>false</value>
+  </property>
+  <property name="disallowActivePackageInstall" displayName="disallowActivePackageInstall">
+    <value>false</value>
+  </property>
+  <property name="packageExecutionCheck" displayName="packageExecutionCheck">
+    <value>0</value>
+  </property>
+  <property name="suspendTriggersDuringDeploy" displayName="Suspend Triggers During Deployment">
+    <value>false</value>
+  </property>
+  <property name="syncDocTypesToBroker" displayName="Synchronize Document Types To Broker During Deployment">
+    <value>true</value>
+  </property>
+  <asset name="ISPackage.Biswa" displayName="Biswa">
+    <implementation.generic type="ispackage" />
+    <dependsOn>IS:ISPackage.helloworld</dependsOn>
+  </asset>
+  <asset name="inbda.specification" displayName="inbda:specification">
+    <implementation.generic type="isspecification" />
+  </asset>
+  <asset name="inbda.demodoc1" displayName="inbda:demodoc1">
+    <implementation.generic type="isdocumenttype" />
+  </asset>
+  <asset name="inbda.mapservice" displayName="inbda:mapservice">
+    <implementation.generic type="isflowservice" />
+  </asset>
+  <asset name="inbda.flowservice1_1" displayName="inbda:flowservice1_1">
+    <implementation.generic type="isflowservice" />
+  </asset>
+  <asset name="inbda.documentType" displayName="inbda:documentType">
+    <implementation.generic type="isdocumenttype" />
+  </asset>
+  <asset name="inbda.flowservice1_1_1" displayName="inbda:flowservice1_1_1">
+    <implementation.generic type="isflowservice" />
+  </asset>
+  <asset name="inbda.flowservice" displayName="inbda:flowservice">
+    <implementation.generic type="isflowservice" />
+  </asset>
+  <asset name="inbda.flowservice1" displayName="inbda:flowservice1">
+    <implementation.generic type="isflowservice" />
+  </asset>
+  <asset name="inbda.javaService" displayName="inbda:javaService">
+    <implementation.generic type="isjavaservice" />
+    <dependsOn>IS:Biswa.code.source.inbda.java</dependsOn>
+    <dependsOn>IS:Biswa.code.classes.inbda.class</dependsOn>
+  </asset>
+  <asset name="inbda.jmstrigger" displayName="inbda:jmstrigger">
+    <implementation.generic type="isjmstrigger" />
+  </asset>
+  <asset name="inbda.new_rest" displayName="inbda:new_rest">
+    <implementation.generic type="isrestresource" />
+    <dependsOn>IS:inbda.flowservice</dependsOn>
+  </asset>
+  <asset name="Biswa.code" displayName="code">
+    <implementation.generic type="isfolder" />
+  </asset>
+  <asset name="Biswa.code.classes" displayName="code/classes">
+    <implementation.generic type="isfolder" />
+  </asset>
+  <asset name="Biswa.code.classes.inbda.class" displayName="code/classes/inbda.class">
+    <implementation.generic type="isfile" />
+  </asset>
+  <asset name="Biswa.code.source" displayName="code/source">
+    <implementation.generic type="isfolder" />
+  </asset>
+  <asset name="Biswa.code.source.inbda.java" displayName="code/source/inbda.java">
+    <implementation.generic type="isfile" />
+  </asset>
+  <asset name="Biswa.code.jars" displayName="code/jars">
+    <implementation.generic type="isfolder" />
+  </asset>
+  <asset name="Biswa.doc" displayName="doc">
+    <implementation.generic type="isfolder" />
+  </asset>
+  <asset name="Biswa.pub" displayName="pub">
+    <implementation.generic type="isfolder" />
+  </asset>
+  <asset name="Biswa.templates" displayName="templates">
+    <implementation.generic type="isfolder" />
+  </asset>
+  <asset name="Biswa.web" displayName="web">
+    <implementation.generic type="isfolder" />
+  </asset>
+  <asset name="Biswa.config" displayName="config">
+    <implementation.generic type="isfolder" />
+  </asset>
+  <asset name="Biswa.resources" displayName="resources">
+    <implementation.generic type="isfolder" />
+  </asset>
+  <asset name="Biswa.lib" displayName="lib">
+    <implementation.generic type="isfolder" />
+  </asset>
 </asset_composite>
+
