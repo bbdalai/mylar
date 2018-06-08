@@ -1,7 +1,7 @@
 <asset_composite xmlns="http://namespaces.softwareag.com/acdl/1.0" targetNamespace="http://namespaces.softwareag.com/webMethods/IS" name="T2" runtimeVersion="10.2.0.0">
   <implementation.generic type="ispackage" />
   <buildInfo name="BuildVersion" value="10.3.0.1" />
-  <buildInfo name="BuildTimestamp" value="2018-06-07T14:03:47" />
+  <buildInfo name="BuildTimestamp" value="2018-06-08T11:06:22" />
   <buildInfo name="MinimumTargetRuntimeVersion" value="10.2.0.0" />
   <property name="activatePkgOnInstall" displayName="Activate Package On Install">
     <value>true</value>
@@ -37,6 +37,9 @@
     <implementation.generic type="isjavaservice" />
     <dependsOn>IS:T2.code.source.test.java</dependsOn>
     <dependsOn>IS:T2.code.classes.test.class</dependsOn>
+  </asset>
+  <asset name="test.fs1" displayName="test:fs1">
+    <implementation.generic type="isflowservice" />
   </asset>
   <asset name="T2.code" displayName="code">
     <implementation.generic type="isfolder" />
